@@ -8,7 +8,7 @@ public class JwtResponse implements Serializable {
 	public JwtResponse(String jwttoken) {
 		this.jwttoken = jwttoken;
 	}
-	public String getToken() {
+	public String getXsignature() {
 		System.out.println("************ "+this.jwttoken);
 		return this.jwttoken;
 	}
