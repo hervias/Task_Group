@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "db049472-f396-4c37-a4f8-4c7cd31d8d35",
+		"name": "Task_Group",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Credential",
+			"item": [
+				{
+					"name": "Credential",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Beare eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXN0ZXJncm91cCIsImV4cCI6MTU5MzkxNDk0OSwiaWF0IjoxNTkzODg2MTQ5fQ.PByaCdIuz_6hK26vB-oDl0BtJauo-Vc3p44OH6QCDkiByUjYzk0qMpt5-hy9pP9EBk4i4oF61zCSW48KmNTkXg"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"key\":2,\r\n\t\"shared_secret\":\"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9099/credential",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"credential"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Message",
+			"item": [
+				{
+					"name": "Message",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Signature",
+								"type": "text",
+								"value": "xsignature eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXN0ZXJncm91cCIsImV4cCI6MTU5MzkxNDk0OSwiaWF0IjoxNTkzODg2MTQ5fQ.PByaCdIuz_6hK26vB-oDl0BtJauo-Vc3p44OH6QCDkiByUjYzk0qMpt5-hy9pP9EBk4i4oF61zCSW48KmNTkXg"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"msg\":\"hola mensaje 4\",\r\n\t\"tags\":\"tag1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9099/message",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"message"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "MessageId",
+			"item": [
+				{
+					"name": "MessageId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Signature",
+								"type": "text",
+								"value": "xsignature eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXN0ZXJncm91cCIsImV4cCI6MTU5MzkxNDk0OSwiaWF0IjoxNTkzODg2MTQ5fQ.PByaCdIuz_6hK26vB-oDl0BtJauo-Vc3p44OH6QCDkiByUjYzk0qMpt5-hy9pP9EBk4i4oF61zCSW48KmNTkXg"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:9099/messageid?identifier=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"messageid"
+							],
+							"query": [
+								{
+									"key": "identifier",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "MessageTag",
+			"item": [
+				{
+					"name": "Messagetag",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Signature",
+								"type": "text",
+								"value": "xsignature eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXN0ZXJncm91cCIsImV4cCI6MTU5MzkxNDk0OSwiaWF0IjoxNTkzODg2MTQ5fQ.PByaCdIuz_6hK26vB-oDl0BtJauo-Vc3p44OH6QCDkiByUjYzk0qMpt5-hy9pP9EBk4i4oF61zCSW48KmNTkXg"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:9099/messagetag?tag=tag1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"messagetag"
+							],
+							"query": [
+								{
+									"key": "tag",
+									"value": "tag1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Authenticate",
+			"item": [
+				{
+					"name": "Authenticate Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"username\":\"mastergroup\",\r\n\t\"password\":\"password\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:9099/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"authenticate"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
